@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Reservation</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Reserve a Slot</h1>
+        <form id="reservationForm">
+            <label for="date">Select a date:</label>
+            <input type="text" id="date" name="date" autocomplete="off" required>
+            <label for="slots">Select a time:</label>
+            <select id="slots" name="slots" disabled>
+                
+            </select>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Reserve</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>

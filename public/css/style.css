@@ -1,0 +1,100 @@
+:root {
+  --primary-color: #007BFF;
+  --primary-hover: #0056b3;
+  --background-color: #f4f4f4;
+  --container-bg: #fff;
+  --light-gray: lightgray;
+  --text-color: #000;
+  --border-color: #ddd;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.container {
+  background-color: var(--container-bg);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.dashboard {
+  width: 90%;
+  height: 90%;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.buttons {
+  padding: 1rem;
+}
+
+.scrollable {
+  overflow-y: auto;
+  max-height: 65vh;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+}
+
+input, select, button {
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+#message {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#logout {
+  position: absolute;
+  right: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid var(--border-color);
+  padding: 8px;
+  text-align: left;
+}
